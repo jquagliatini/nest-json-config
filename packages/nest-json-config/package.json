@@ -1,0 +1,35 @@
+{
+  "name": "@jqgl/nest-json-config",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=16.7.0"
+  },
+  "files": [
+    "dist/*.js",
+    "dist/*.d.ts",
+    "!dist/types.js",
+    "!dist/*.tsbuildinfo",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "prepack": "pnpm run build",
+    "dev": "tsc -p . --watch"
+  },
+  "dependencies": {
+    "deepmerge": "^4.0.0"
+  },
+  "devDependencies": {
+    "@nestjs/common": "10.4.15",
+    "@types/node": "22.10.2",
+    "reflect-metadata": "0.1.12",
+    "typescript": "5.7.2"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^10.0.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "properties": {
+    "remoteBlog": {
+      "type": "object",
+      "properties": {
+        "baseUrl": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "[^\\/]$"
+        }
+      },
+      "required": [
+        "baseUrl"
+      ],
+      "additionalProperties": false
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "remoteBlog"
+  ],
+  "additionalProperties": false,
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
